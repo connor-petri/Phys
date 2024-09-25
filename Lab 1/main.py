@@ -1,5 +1,5 @@
 import json
-from stat_tools import rand_uncertainty, average
+from resources.stat_tools import rand_uncertainty, average
 
 def load_json_data(filename: str = "data.json"):
     with open("./" + filename) as file:
