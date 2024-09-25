@@ -9,10 +9,10 @@ def load_json_data(filename: str = "data.json"):
 if __name__ == "__main__":
     data = load_json_data()
 
-    distances = data["ruler-distances"]
-    masses = data["scale-masses"]
-    diameters = data["caliper-diameters"]
+    distances_cm = data["ruler-distances"]
+    masses_g = data["scale-masses"]
+    diameters_cm = data["caliper-diameters"]
 
-    ruler_ru = round(rand_uncertainty(distances), 3)
-    masses_ru = round(rand_uncertainty(masses, 3))
-    diameters_ru = round(rand_uncertainty(diameters), 3)
+    ruler_ru = round(rand_uncertainty(distances_cm), 3)
+    masses_ru = round(rand_uncertainty(masses_g, 3))
+    diameters_ru = round(rand_uncertainty(diameters_cm), 3)
